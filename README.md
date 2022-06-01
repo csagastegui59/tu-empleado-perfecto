@@ -17,6 +17,8 @@ It is recommended to install Yarn through the npm package manager, which comes b
 $ npm install --global yarn
 ```
 
+Then run:
+
 ```bash
 $ yarn install
 ```
