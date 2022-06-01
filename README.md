@@ -5,10 +5,12 @@
 
 ## Installation
 
-Node version 16.15.0
+**Node version 16.15.0**
+
 You can download node from the official website by open the link: https://nodejs.org/es/download/
 
-Yarn version 1.22.15
+**Yarn version 1.22.15**
+
 It is recommended to install Yarn through the npm package manager, which comes bundled with Node.js when you install it on your system.
 
 ```bash
