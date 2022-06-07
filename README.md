@@ -1,10 +1,5 @@
-## Description
-
-
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
-## Installation
-
+# Tu Empleado Perfecto API
+## Prerequisites
 **Node version 16.15.0**
 
 You can download node from the official website by open the link: https://nodejs.org/es/download/
@@ -16,8 +11,11 @@ It is recommended to install Yarn through the npm package manager, which comes b
 ```bash
 $ npm install --global yarn
 ```
+## Installation
 
-Then run:
+1. create a copy of .env.stage.dev.example with the name `.env.stage.dev`, placed it at the root of the project, and replace its values with your own credentials.
+
+2. Run the following commands:
 
 ```bash
 $ yarn install
@@ -48,16 +46,9 @@ $ yarn test:e2e
 # test coverage
 $ yarn test:cov
 ```
-
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Developer - [Christian Sagástegui](https://github.com/csagastegui59)
 
 ## License
 
