@@ -1,5 +1,6 @@
 import { Body, Controller, Get, Param, Post } from '@nestjs/common';
-import { CreateEmployeeDto } from '../employees/dto/create-employee.dto';
+import { CreatedEmployeeDto } from 'src/employees/dto/res/created-employee.dto';
+import { CreateEmployeeDto } from '../employees/dto/req/create-employee.dto';
 import { CompaniesService } from './companies.service';
 import { Company } from './company.entity';
 import { CreateCompanyDto } from './dto/create-company.dto';
@@ -24,7 +25,10 @@ export class CompaniesController {
   }
 
   @Post('/:id')
-  addEmployee(@Body() createEmployeeDto: CreateEmployeeDto): Promise<any> {
-    return this.companiesService.addEmployee(createEmployeeDto);
+  addEmployee(
+    @Param() params,
+    @Body() createEmployeeDto: CreateEmployeeDto,
+  ): Promise<CreatedEmployeeDto> {
+    return this.companiesService.addEmployee(createEmployeeDto, params.id);
   }
 }

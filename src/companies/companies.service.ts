@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { CreateEmployeeDto } from '../employees/dto/create-employee.dto';
+import { CreateEmployeeDto } from '../employees/dto/req/create-employee.dto';
 import { Employee } from '../employees/employees.entity';
 import { EmployeesRepository } from '../employees/employees.repository';
 import { CompaniesRepository } from './companies.repository';
@@ -27,10 +27,11 @@ export class CompaniesService {
     return this.companiesRepository.createOne(createCompanyDto);
   }
 
-  async addEmployee(createEmployeeDto: CreateEmployeeDto): Promise<Employee> {
-    const company = await this.companiesRepository.getOneById(
-      createEmployeeDto.companyId,
-    );
+  async addEmployee(
+    createEmployeeDto: CreateEmployeeDto,
+    id: string,
+  ): Promise<Employee> {
+    const company = await this.companiesRepository.getOneById(id);
 
     const { email, name, rut } = createEmployeeDto;
     const employee = new Employee();

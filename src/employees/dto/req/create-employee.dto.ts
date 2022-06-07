@@ -9,7 +9,4 @@ export class CreateEmployeeDto {
 
   @IsNotEmpty()
   rut: string;
-
-  @IsNotEmpty()
-  companyId: string;
 }
