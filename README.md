@@ -34,18 +34,6 @@ $ yarn start:dev
 $ yarn start:prod
 ```
 
-## Test
-
-```bash
-# unit tests
-$ yarn test
-
-# e2e tests
-$ yarn test:e2e
-
-# test coverage
-$ yarn test:cov
-```
 ## Stay in touch
 
 - Developer - [Christian Sagástegui](https://github.com/csagastegui59)
